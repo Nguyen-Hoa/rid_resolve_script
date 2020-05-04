@@ -1,11 +1,11 @@
 #!/bin/bash
 
-PDF_DIR = "./pdfs"
-OUT_DIR = './named_files'
+PDF_DIR=./pdfs
+OUT_DIR=./named_files
 mkdir $OUT_DIR
 
 # FOR ALL FILES IN DIRECTORY
-for FILENAME in $(ls ${PDF_DIR})
+for FILENAME in $(ls $PDF_DIR)
 do
 
 	# ONLY CONTINUE IF FILE IS PDF
@@ -35,7 +35,7 @@ do
 
 	# CREATE NEW FILE WITH TITLE
 	echo ${title} found for $FILENAME
-	scp ${PDF_DIR}${FILENAME} ${OUT_DIR}/${title}.pdf
+	scp ${PDF_DIR}/${FILENAME} ${OUT_DIR}/${title}.pdf
 
 	# EMPTY BUFFER
 	: > temp.txt
