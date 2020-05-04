@@ -4,7 +4,7 @@ PDF_DIR=./pdfs
 OUT_DIR=./named_files
 mkdir $OUT_DIR
 
-# FOR ALL FILES IN DIRECTORY
+# FOR ALL FILES IN PDF DIRECTORY
 for FILENAME in $(ls $PDF_DIR)
 do
 
@@ -23,10 +23,10 @@ do
 	        wget -q -O - https://dl.acm.org/doi/10.1145/${FILENAME%.pdf} | grep "<title>.*</title>" >> temp.txt
 	fi
 
-	# GRAB TITLE (FROM FIRST <TITLE> TAG>)
+	# GRAB TITLE (FROM FIRST <TITLE> TAG)
 	title=$(head -1 temp.txt)
 
-	# CLEAN TITLE
+	# CLEAN TITLE (REMOVE TAGS, REPLACE SPACES WITH '_')
 	tag1="<title>"
 	tag2="</title>"
 	title=${title#"$tag1"}
