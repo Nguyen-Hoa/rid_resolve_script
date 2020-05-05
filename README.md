@@ -9,7 +9,7 @@ Currently supports arxiv.org and dl.acm.org. More coming soon.
 # Examples
 
 ### Turn a directory that looks likes this
-![Directory of unnamed pdfs](https://github.com/Nguyen-Hoa/rid_resolve_script/tree/master/assets/unnamed.png)
+![Directory of unnamed pdfs](assets/unnamed.png)
 
 ### To this
 ![Directory of named pdfs][named]
