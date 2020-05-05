@@ -4,7 +4,7 @@ Currently supports arxiv.org and dl.acm.org. More coming soon.
 
 ### To-Do List
 * Support for: IEEE, Distill, etc.
-* Take input and output direectories as arguments
+* Take input and output directories as arguments
 
 # Examples
 
